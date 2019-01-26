@@ -122,11 +122,9 @@ Can be found in a conditional statement that never executes.
 # Possible future rules
 The following rules will be considered for the future, but are not currently considered part of the expectations for stable code.
 
-- Encoder reading unit naming
--- “NU” for native units (raw value read by encoder)
--- Different kinds of measurements:
---- Rotary position
----- Degrees
---- Linear position
----- “IN” for inches
---- Velocity
+Encoder reading unit naming
+- “NU” for native units (raw value read by encoder)
+- Different kinds of measurements:
+  - Rotary position (Degrees)
+  - Linear position (“IN” for inches)
+  - Velocity
