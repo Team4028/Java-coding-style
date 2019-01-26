@@ -73,49 +73,60 @@ Out of date or incorrect comments make code more difficult to understand than if
 Use correct English grammar, spelling, and punctuation. Poor quality comments may make the relevant code more difficult to understand than if there were no comments written at all.
 
 ## Functions
-5.4.1. Prefer to structure code into small functions
 
-5.5. Design conventions
-5.5.1. Periodic functions must not take a long time to run
+### Prefer to structure code into small functions
+
+## Design conventions
+
+### Periodic functions must not take a long time to run
 Avoid while loops for a condition to be met in periodic functions
 Avoid sleep functions longer than 2 ms
 Prefer to check state in the next cycle
 FRC code will throw exception if periodic function not completed in time
-5.5.2. Prefer to map inputs with commands instead reading directly in subsystems
+
+### Prefer to map inputs with commands instead reading directly in subsystems
 Do not bound subsystems directly to other subsystems or driver interface
 Should be able to run in either teleop or auton
 Allows subsystems to be developed independently
-5.5.3. Set motor controller configs on initialization to clear previous state
+
+### Set motor controller configs on initialization to clear previous state
 Call internal function for resetting
-5.5.4. Singleton pattern for subsystem classes
+
+### Singleton pattern for subsystem classes
 Makes sure there is only one copy of values read from robot
-5.5.5. Prefer print statements for errors and warnings
-5.5.6. Prefer to publish live info to Dashboard instead of print statements
-5.5.7. DRY (Don’t Repeat Yourself)
-5.5.8. Property accessors start with “get”
+
+### Prefer print statements for errors and warnings
+
+### Prefer to publish live info to Dashboard instead of print statements
+
+### DRY (Don’t Repeat Yourself)
+
+### Property accessors start with “get”
 Underscore after get?
-5.6. Other style rules
-5.6.1. Prefer named constants instead of “magic numbers”
+
+## Other style rules
+
+### Prefer named constants instead of “magic numbers”
 A “magic number” in source code is a numerical constant used directly in code that offers no context to the reader for its meaning. 
 
 “The use of unnamed magic numbers in code obscures the developers' intent in choosing that number, increases opportunities for subtle errors … and makes it more difficult for the program to be adapted and extended in the future. Replacing all significant magic numbers with named constants makes programs easier to read, understand and maintain.” Wikipedia: magic number
 
-http://checkstyle.sourceforge.net/config_coding.html#MagicNumber
-5.6.2. Consider listing constants for a class in a beginning section
+### Consider listing constants for a class in a beginning section
 The best place to store constants for a script or project is at the begging of a file or in a dedicated script. Prefer to include constants in these places when possible. Short simulations can have constants listed in the beginning of the code, but bigger projects should have a dedicated script for constants and configuration. This practice makes it easy to find and update any constants used in an algorithm.
-5.6.3. Remove “dead” code
+
+### Remove “dead” code
 Can be found in a conditional statement that never executes.
-5.6.4. Require curly brackets for blocks 
-http://checkstyle.sourceforge.net/config_blocks.html#NeedBraces
-
-6. Possible future rules
+
+### Require curly brackets for blocks 
+
+# Possible future rules
 The following rules will be considered for the future, but are not currently considered part of the expectations for stable code.
 
-Encoder reading unit naming
-“NU” for native units (raw value read by encoder)
-Different kinds of measurements:
-Rotary position
-Degrees
-Linear position
-“IN” for inches
-Velocity
+- Encoder reading unit naming
+-- “NU” for native units (raw value read by encoder)
+-- Different kinds of measurements:
+--- Rotary position
+---- Degrees
+--- Linear position
+---- “IN” for inches
+--- Velocity
