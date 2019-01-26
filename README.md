@@ -1,13 +1,10 @@
 # Java coding style
 
 # Contents
-[Purpose](#purpose)
-
-[Process](#process)
-
-[Style rules](#style-rules)
-
-[Possible future style rules](#possible-future-style-rules)
+-[Purpose](#purpose)
+-[Process](#process)
+-[Style rules](#style-rules)
+-[Possible future style rules](#possible-future-style-rules)
 
 # Purpose
 Having a coding style guide helps a team communicate and collaborate effectively. Without one, it can be hard to tell what other team members want their code to say, or team members may repeatedly change style that they don't agree with.
