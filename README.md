@@ -1,8 +1,14 @@
-# Java-coding-style
+# Java coding style
 
 # Purpose
+Having a coding style guide helps a team communicate and collaborate effectively. Without one, it can be hard to tell what other team members want their code to say, or team members may repeatedly change style that they don't agree with.
+
+While many coding styles may be considered to be good practices, only those documented here will be expected of stable code.
+
+It is expected that the team will change this document over time in reaction to experience with its style as well as the requirements of future work. To keep track of these changes, the document will be versioned in the title and changes will be documented in the Change Log section. Maintaining this change log will make it easier for team members to follow updates to the preferred coding style and update their code accordingly.
 
 # Process
+Team members should try to follow these rules as much as possible for any code that they write for the team. These style rules will be enforced by team leaders during code reviews.
 
 # Style rules
 
